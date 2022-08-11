@@ -108,6 +108,7 @@ This might take a while. The output looks like this:
 ### Transfer learning
 
 cd IPC/transfer
+
 python transfer_target.py
 
 
