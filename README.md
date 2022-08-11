@@ -8,9 +8,11 @@
 
 ### Rule-based dictionary baseline
 
-cd IPC/dictionary_baseline
+Change into the dictionary baseline directory and run the python script:
 
-python rulebased_target.py 
+> cd IPC/dictionary_baseline
+> 
+> python rulebased_target.py 
 
 This might take a while. The output looks like this:
 
@@ -28,9 +30,11 @@ This might take a while. The output looks like this:
 
 ### SVM baseline 
 
-cd IPC/svm_baseline
+Change into the SVM baseline directory and run the python script:
 
-python svm_baseline_target.py 
+> cd IPC/svm_baseline
+> 
+> python svm_baseline_target.py 
 
 This might take a while. The output looks like this:
 
@@ -64,10 +68,16 @@ f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 ### Transfer learning
 
 **Train and run transfer learning model for target prediction (with early stopping).**
+
    Attention: model produces many checkpoints => clean up after training to free disk space!
 
-cd IPC/transfer
-python transfer_target.py
+
+Change into the transfer directory for stance prediction and run the python script:
+
+> cd IPC/transfer_target
+>
+> python transfer_target.py
+
 
 > Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
 > 
@@ -81,14 +91,21 @@ python transfer_target.py
 >>	- results_dev.txt and results_test.txt
 
 
+After training the model and predicting the labels, you can evaluate the predictions:
+
+> python eval_transfer_target_prediction.py
+
+
 
 ## STANCE PREDICTION  
 
 ### Rule-based dictionary baseline
 
-cd IPC/dictionary_baseline
+Change into the dictionary baseline directory and run the python script:
 
-python rulebased_stance.py
+> cd IPC/dictionary_baseline
+> 
+> python rulebased_stance.py
 
 This might take a while. The output looks like this:
 
@@ -105,9 +122,11 @@ This might take a while. The output looks like this:
 
 ### SVM baseline 
 
-cd IPC/svm_baseline
+Change into the SVM baseline directory and run the python script:
 
-python svm_baseline_target.py
+> cd IPC/svm_baseline
+> 
+> python svm_baseline_target.py
 
 This might take a while. The output looks like this:
 
@@ -128,8 +147,15 @@ This might take a while. The output looks like this:
 
 ### Transfer learning
 
-cd IPC/transfer
+Change into the transfer directory for stance prediction and run the python script:
 
-python transfer_target.py
+> cd IPC/transfer_stance
+>
+> python transfer_stance.py
+
+
+After training the model and predicting the labels, you can evaluate the predictions:
+
+> python eval_transfer_stance_prediction.py
 
 
