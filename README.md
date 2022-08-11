@@ -3,8 +3,7 @@ InterPartyCommunication
 
 
 
-### TARGET PREDICTION ###
-#########################
+## TARGET PREDICTION 
 
 
 ### Rule-based dictionary baseline
@@ -13,7 +12,7 @@ cd IPC/dictionary_baseline
 
 python rulebased_target.py 
 
-# This might take a while. The output looks like this:
+**This might take a while. The output looks like this:**
 ---
  Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
  Rule-based results for targets:	 fold2 	f1 (macro) 0.48178013738918696 	f1 (micro) 0.6338406445837064
@@ -27,7 +26,7 @@ python rulebased_target.py
 cd IPC/svm_baseline
 python svm_baseline_target.py 
 
-# This might take a while. The output looks like this:
+**This might take a while. The output looks like this:**
 
  [02/Aug/2022 16:36:44] INFO - Start training on: fold1
  [02/Aug/2022 16:38:35] INFO - Train vectorizer and do feature selection: 0.05s
@@ -37,18 +36,19 @@ python svm_baseline_target.py
  [02/Aug/2022 16:38:35] INFO - F1:   0.47s
  [02/Aug/2022 16:38:35] INFO - Results for LinearSVC	fold1	f1 (macro) 0.47s	f1 (micro)  0.56s
  ...
+---
 
-# Model predictions are written to:
+**Model predictions are written to:**
  predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
 
-# Results (F1) are written to:
+**Results (F1) are written to:**
  f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 
 
 
 ### Transfer learning
 
-### Train and run transfer learning model for target prediction (with early stopping).
+**Train and run transfer learning model for target prediction (with early stopping).**
    Attention: model produces many checkpoints => clean up after training to free disk space!
 
 cd IPC/transfer
