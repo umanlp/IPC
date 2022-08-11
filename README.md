@@ -14,13 +14,13 @@ InterPartyCommunication
 
 >This might take a while. The output looks like this:
 
----
+
 Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
 Rule-based results for targets:	 fold2 	f1 (macro) 0.48178013738918696 	f1 (micro) 0.6338406445837064
 Rule-based results for targets:	 fold3 	f1 (macro) 0.5040863768741828 	f1 (micro) 0.6299151888974557
 Rule-based results for targets:	 fold4 	f1 (macro) 0.43145097724551756 	f1 (micro) 0.5537909836065574
 Rule-based results for targets:	 fold5 	f1 (macro) 0.42835486793855193 	f1 (micro) 0.5619757688723206
----
+
 
 ### SVM baseline 
 
@@ -37,7 +37,7 @@ This might take a while. The output looks like this:
 >[02/Aug/2022 16:38:35] INFO - F1:   0.47s
 >[02/Aug/2022 16:38:35] INFO - Results for LinearSVC	fold1	f1 (macro) 0.47s	f1 (micro)  0.56s
 >...
----
+
 
 Model predictions are written to:
 > predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
