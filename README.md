@@ -58,14 +58,14 @@ f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 cd IPC/transfer
 python transfer_target.py
 
-Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
-
+> Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
+> 
 > Best trained model (after early stopping) is in 
 >>	- outputs.bert-base-german-cased.target.foldN/best_model
-
+>
 > Predictions are written to folder best_model:
 >>	- predictions_dev.txt and predictions_test.txt
-
+>
 > Results are written to folder best_model:
 >>	- results_dev.txt and results_test.txt
 
