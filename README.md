@@ -156,6 +156,9 @@ Change into the transfer directory for stance prediction and run the python scri
 
 After training the model and predicting the labels, you can evaluate the predictions:
 
-> python eval_transfer_stance_prediction.py
+Change into the IPC folder and set the seed (an integer between 1 and 5; the specific initialisation that you want to evaluate).
 
+> cd ..
+>
+> python transfer_stance/eval_transfer_target_stance_prediction.py transfer_target/run${seed}_[0-9][0-9]*/outputs.bert-base-german-cased.target.fold$seed/best_model/transfer_predictions_target_test.txt transfer_stance/run${seed}_[0-9][0-9]*/outputs.bert-base-german-cased.stance.fold$seed/best_model/transfer_predictions_stance_test.txt
 
