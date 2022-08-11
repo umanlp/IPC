@@ -12,7 +12,7 @@ cd IPC/dictionary_baseline
 
 python rulebased_target.py 
 
-**This might take a while. The output looks like this:**
+This might take a while. The output looks like this:
 ---
  Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
  Rule-based results for targets:	 fold2 	f1 (macro) 0.48178013738918696 	f1 (micro) 0.6338406445837064
