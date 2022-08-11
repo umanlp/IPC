@@ -8,11 +8,11 @@ InterPartyCommunication
 
 ### Rule-based dictionary baseline
 
->cd IPC/dictionary_baseline
+cd IPC/dictionary_baseline
 
->python rulebased_target.py 
+python rulebased_target.py 
 
->This might take a while. The output looks like this:
+This might take a while. The output looks like this:
 
 
 > Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
@@ -24,8 +24,9 @@ InterPartyCommunication
 
 ### SVM baseline 
 
-> cd IPC/svm_baseline
-> python svm_baseline_target.py 
+cd IPC/svm_baseline
+
+python svm_baseline_target.py 
 
 This might take a while. The output looks like this:
 
@@ -40,10 +41,12 @@ This might take a while. The output looks like this:
 
 
 Model predictions are written to:
-> predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
+
+predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
 
 Results (F1) are written to:
-> f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
+
+f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 
 
 
@@ -55,21 +58,20 @@ Results (F1) are written to:
 cd IPC/transfer
 python transfer_target.py
 
-# Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
+Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
 
-# Best trained model (after early stopping) is in 
-	- outputs.bert-base-german-cased.target.foldN/best_model
+> Best trained model (after early stopping) is in 
+>>	- outputs.bert-base-german-cased.target.foldN/best_model
 
-# Predictions are written to folder best_model:
-	- predictions_dev.txt and predictions_test.txt
+> Predictions are written to folder best_model:
+>>	- predictions_dev.txt and predictions_test.txt
 
-# Results are written to folder best_model:
-	- results_dev.txt and results_test.txt
+> Results are written to folder best_model:
+>>	- results_dev.txt and results_test.txt
 
 
 
-### STANCE PREDICTION ###
-#########################
+## STANCE PREDICTION  
 
 ### Rule-based dictionary baseline
 
@@ -77,30 +79,31 @@ cd IPC/dictionary_baseline
 
 python rulebased_stance.py
 
-# This might take a while. The output looks like this:
+This might take a while. The output looks like this:
 
-Rule-based results for stance:	 	f1 (macro) 0.26846129713102773 	f1 (micro) 0.40804597701149425
-Rule-based results for stance:	 	f1 (macro) 0.2441511590893233 	f1 (micro) 0.3809310653536258
-Rule-based results for stance:	 	f1 (macro) 0.2455597927104502 	f1 (micro) 0.3831919814957594
-Rule-based results for stance:	 	f1 (macro) 0.2392858045690242 	f1 (micro) 0.3596311475409837
-Rule-based results for stance:	 	f1 (macro) 0.24596685310556862 	f1 (micro) 0.3383038210624418
----
+> Rule-based results for stance:	 	f1 (macro) 0.26846129713102773 	f1 (micro) 0.40804597701149425
+> Rule-based results for stance:	 	f1 (macro) 0.2441511590893233 	f1 (micro) 0.3809310653536258
+> Rule-based results for stance:	 	f1 (macro) 0.2455597927104502 	f1 (micro) 0.3831919814957594
+> Rule-based results for stance:	 	f1 (macro) 0.2392858045690242 	f1 (micro) 0.3596311475409837
+> Rule-based results for stance:	 	f1 (macro) 0.24596685310556862 	f1 (micro) 0.3383038210624418
+
 
 ### SVM baseline 
 
 cd IPC/svm_baseline
+
 python svm_baseline_target.py
 
-# This might take a while. The output looks like this:
+This might take a while. The output looks like this:
 
-[02/Aug/2022 22:13:48] INFO - Time to train vectorizer and do feature selection: 0.08s
-[02/Aug/2022 22:13:49] INFO - ACC:  0.66s
-[02/Aug/2022 22:13:49] INFO - PREC: 0.59s
-[02/Aug/2022 22:13:49] INFO - REC:  0.45s
-[02/Aug/2022 22:13:49] INFO - F1:   0.45s
-[02/Aug/2022 22:13:49] INFO - Results for LinearSVC	fold1	f1 (macro) 0.45s	f1 (micro)  0.66s
-...
----
+> [02/Aug/2022 22:13:48] INFO - Time to train vectorizer and do feature selection: 0.08s
+> [02/Aug/2022 22:13:49] INFO - ACC:  0.66s
+> [02/Aug/2022 22:13:49] INFO - PREC: 0.59s
+> [02/Aug/2022 22:13:49] INFO - REC:  0.45s
+> [02/Aug/2022 22:13:49] INFO - F1:   0.45s
+> [02/Aug/2022 22:13:49] INFO - Results for LinearSVC	fold1	f1 (macro) 0.45s	f1 (micro)  0.66s
+> ...
+
 
 ### Transfer learning
 
