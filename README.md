@@ -56,7 +56,7 @@ python rulebased_target.py
 ```
 
 This might take a while. The output looks like this:
-```
+
 
 > Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
 > 
