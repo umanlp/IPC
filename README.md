@@ -24,7 +24,8 @@ Next, you need to install the requirements listed in the file <requirements.txt>
 ```typescript
 pip install -r requirements.txt
 ```
-It might be a good idea to install everything in an <a href="https://www.anaconda.com/products/distribution">anaconda environment</a>. Here you can find instructions on <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">how to set up a new virtual environment with Anaconda</a>.
+It might be a good idea to create a new virtual environment with <a href="https://www.anaconda.com/products/distribution">Anaconda</a>, and  install everything in your dedicated project environment. 
+Here you can find instructions on <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">how to set up a new virtual environment</a> with Anaconda.
 
 
 ### Data 
