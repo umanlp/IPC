@@ -100,11 +100,11 @@ This might take a while. The output looks like this:
 
 Model predictions are written to:
 
-predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
+  - predictions_SVC-fold1.txt, predictions_SVC-fold2.txt, ..., predictions_SVC-fold5.txt
 
 Results (F1) are written to:
 
-f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
+  - f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 
 
 
