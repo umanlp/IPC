@@ -25,18 +25,18 @@ This repository contains the code and data needed to reproduce the experiments a
 
 
 ------------------------
-## Citation
+#### Citation
 
 ```
 @misc{Mueller-etal-2021,
-author = {Müller, Wolfgang C. and Bodlos, Anita and Dolezal, Martin and Eder, Nikolaus and Ennser-Jedenastik, Laurenz and Gahn, Christina and Graf, Elisabeth and Haselmayer, Martin and Haudum, Teresa and Huber, Lena Maria and Kaltenegger, Matthias and Meyer, Thomas M. and Praprotnik, Katrin and Reidinger, Verena and Winkler, Anna Katharina},
-publisher = {AUSSDA},
-title = {{AUTNES Content Analysis of Party Press Releases: Cumulative File (SUF edition)}},
-UNF = {UNF:6:V9hNiWjjSnOK8j2CFzWZlw==},
-year = {2021},
-notex = {V1},
-doi = {10.11587/25P2WR},
-url = {https://doi.org/10.11587/25P2WR}
+   author = {Müller, Wolfgang C. and Bodlos, Anita and Dolezal, Martin and Eder, Nikolaus and Ennser-Jedenastik, Laurenz and Gahn, Christina and Graf,     Elisabeth and Haselmayer, Martin and Haudum, Teresa and Huber, Lena Maria and Kaltenegger, Matthias and Meyer, Thomas M. and Praprotnik, Katrin and Reidinger, Verena and Winkler, Anna Katharina},
+   publisher = {AUSSDA},
+   title = {{AUTNES Content Analysis of Party Press Releases: Cumulative File (SUF edition)}},
+   UNF = {UNF:6:V9hNiWjjSnOK8j2CFzWZlw==},
+   year = {2021},
+   notex = {V1},
+   doi = {10.11587/25P2WR},
+   url = {https://doi.org/10.11587/25P2WR}
 }
 ```
 <a href="https://www.autnes.at/autnes-daten/" />
