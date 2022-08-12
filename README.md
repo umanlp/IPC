@@ -125,7 +125,7 @@ python transfer_target.py
 
 > Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
 > 
-> Best trained model (after early stopping) is in 
+> Best trained model (after early stopping) is in: 
 >	- outputs.bert-base-german-cased.target.foldN/best_model
 >
 > Predictions are written to folder best_model:
