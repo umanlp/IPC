@@ -14,6 +14,19 @@ This repository contains the code and data needed to reproduce the experiments a
 
 ## Negative Campaigning 
 
+### Prerequisites
+
+The code in this repository uses the <a href="https://simpletransformers.ai/">Simple Transformers</a> library. Follow the 
+<a href="https://simpletransformers.ai/docs/installation/"> instructions </a> to install Simple Transformers.
+
+Next, you need to install the requirements listed in the file <requirements.txt>
+
+```typescript
+pip install -r requirements.txt
+```
+It might be a good idea to install everything in an <a href="https://www.anaconda.com/products/distribution">anaconda environment</a>. Here you can find instructions on <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">how to set up a new virtual environment with Anaconda</a>.
+
+
 ### Data 
 
 - **data/negative_campaigning** 
