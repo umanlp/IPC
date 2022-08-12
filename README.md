@@ -126,13 +126,13 @@ python transfer_target.py
 > Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
 > 
 > Best trained model (after early stopping) is in 
->>	- outputs.bert-base-german-cased.target.foldN/best_model
+>	- outputs.bert-base-german-cased.target.foldN/best_model
 >
 > Predictions are written to folder best_model:
->>	- predictions_dev.txt and predictions_test.txt
+>	- predictions_dev.txt and predictions_test.txt
 >
 > Results are written to folder best_model:
->>	- results_dev.txt and results_test.txt
+>	- results_dev.txt and results_test.txt
 
 
 After training the model and predicting the labels, you can evaluate the predictions:
