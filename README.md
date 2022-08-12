@@ -49,12 +49,14 @@ This repository contains the code and data needed to reproduce the experiments a
 
 Change into the dictionary baseline directory and run the python script:
 
+```typescript
 cd IPC/dictionary_baseline
 
 python rulebased_target.py 
+```
 
 This might take a while. The output looks like this:
-
+```
 
 > Rule-based results for targets:	 fold1 	f1 (macro) 0.48369630013349035 	f1 (micro) 0.6024904214559387
 > 
@@ -71,9 +73,11 @@ This might take a while. The output looks like this:
 
 Change into the SVM baseline directory and run the python script:
 
+```typescript
 cd IPC/svm_baseline
 
 python svm_baseline_target.py 
+```
 
 This might take a while. The output looks like this:
 
@@ -113,10 +117,11 @@ f1_SVC-fold1.txt, f1_SVC-fold2.txt, ..., f1_SVC-fold5.txt
 
 Change into the transfer directory for stance prediction and run the python script:
 
+```typescript
 cd IPC/transfer_target
 
 python transfer_target.py
-
+```
 
 > Output is written to: outputs.bert-base-german-cased.target.fold[1-5]/
 > 
@@ -132,8 +137,9 @@ python transfer_target.py
 
 After training the model and predicting the labels, you can evaluate the predictions:
 
+```typescript
 python eval_transfer_target_prediction.py
-
+```
 
 
 ## STANCE PREDICTION  
@@ -142,9 +148,11 @@ python eval_transfer_target_prediction.py
 
 Change into the dictionary baseline directory and run the python script:
 
+```typescript
 cd IPC/dictionary_baseline
  
 python rulebased_stance.py
+```
 
 This might take a while. The output looks like this:
 
@@ -163,9 +171,11 @@ This might take a while. The output looks like this:
 
 Change into the SVM baseline directory and run the python script:
 
+```typescript
 cd IPC/svm_baseline
  
 python svm_baseline_target.py
+```
 
 This might take a while. The output looks like this:
 
@@ -188,16 +198,18 @@ This might take a while. The output looks like this:
 
 Change into the transfer directory for stance prediction and run the python script:
 
+```typescript
 cd IPC/transfer_stance
 
 python transfer_stance.py
-
+```
 
 After training the model and predicting the labels, you can evaluate the predictions:
 
 Change into the IPC folder and set the seed (an integer between 1 and 5; the specific initialisation that you want to evaluate).
 
+```typescript
 cd ..
 
 python transfer_stance/eval_transfer_target_stance_prediction.py transfer_target/run${seed}_[0-9][0-9]*/outputs.bert-base-german-cased.target.fold$seed/best_model/transfer_predictions_target_test.txt transfer_stance/run${seed}_[0-9][0-9]*/outputs.bert-base-german-cased.stance.fold$seed/best_model/transfer_predictions_stance_test.txt
-
+```
