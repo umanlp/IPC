@@ -25,7 +25,7 @@ This repository contains the code and data needed to reproduce the experiments a
 
 
 ------------------------
-#### Citation
+#### Citation for AUTNES data
 
 ```
 @misc{Mueller-etal-2021,
@@ -39,7 +39,7 @@ This repository contains the code and data needed to reproduce the experiments a
    url = {https://doi.org/10.11587/25P2WR}
 }
 ```
-<a href="https://www.autnes.at/autnes-daten/" />
+<a href="https://www.autnes.at/autnes-daten/">AUTNES Party Press Releases (original data set)</a>
 
 
 ## TARGET PREDICTION 
