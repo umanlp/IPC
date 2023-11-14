@@ -6,11 +6,11 @@
 ## Repository Description
 
 We present a new method for investigating inter-party communication, based on 
-transfer learning, and apply our method to two different scenarios:
+transfer learning, and apply and evaluate our method in two different settings:
 1. coalition signal detection
 2. negative campaigning, i.e., extracting the target and stance towards this target from party press releases.
 
-This repository contains the code and data needed to reproduce the experiments and results reported in our paper. 
+This repository contains the code and data needed to reproduce the experiments and results for neative campaigning reported in our paper. 
 
 ## Negative Campaigning 
 
@@ -56,10 +56,10 @@ Here you can find instructions on <a href="https://docs.conda.io/projects/conda/
 <a href="https://www.autnes.at/autnes-daten/">AUTNES Party Press Releases (original data set)</a>
 
 
-## TARGET PREDICTION 
+### TARGET PREDICTION 
 
 
-### Rule-based dictionary baseline
+#### Rule-based dictionary baseline
 
 Change into the dictionary baseline directory and run the python script:
 
@@ -83,7 +83,7 @@ This might take a while. The output looks like this:
 > Rule-based results for targets:	 fold5 	f1 (macro) 0.42835486793855193 	f1 (micro) 0.5619757688723206
 
 
-### SVM baseline 
+#### SVM baseline 
 
 Change into the SVM baseline directory and run the python script:
 
@@ -122,7 +122,7 @@ Results (F1) are written to:
 
 
 
-### Transfer learning
+#### Transfer learning
 
 **Train and run transfer learning model for target prediction (with early stopping).**
 
@@ -156,7 +156,7 @@ python eval_transfer_target_prediction.py
 ```
 
 
-## STANCE PREDICTION  
+### STANCE PREDICTION  
 
 ### Rule-based dictionary baseline
 
@@ -181,7 +181,7 @@ This might take a while. The output looks like this:
 > Rule-based results for stance:	 	f1 (macro) 0.24596685310556862 	f1 (micro) 0.3383038210624418
 
 
-### SVM baseline 
+#### SVM baseline 
 
 Change into the SVM baseline directory and run the python script:
 
@@ -208,7 +208,7 @@ This might take a while. The output looks like this:
 > ...
 
 
-### Transfer learning
+#### Transfer learning
 
 Change into the transfer directory for stance prediction and run the python script:
 
